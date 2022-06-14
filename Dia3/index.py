@@ -25,3 +25,16 @@
 #mi_texto = "Esta es una prueba"
 #resultado = mi_texto.rindex("a")
 #print(resultado)
+
+#palabra = "ordenador"
+#resultado = palabra[4]
+#print(resultado)
+
+
+#frase = "En teoría, la teoría y la práctica son los mismos. En la práctica, no lo son."
+#palabra = frase.index("práctica")
+#print(palabra)
+
+#frase = "En teoría, la teoría y la práctica son los mismos. En la práctica, no lo son."
+#resultado = frase.rindex("práctica")
+#print(resultado)
