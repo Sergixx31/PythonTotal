@@ -51,10 +51,9 @@
 #print(resultado)
 
 
-frase = "Si la implementación es difícil de explicar, puede que sea una mala idea."
-reemplazar = frase.replace("difícil","fácil")
-reemplazar2 = reemplazar.replace("mala","buena")
-print(reemplazar)
+#frase = "Si la implementación es difícil de explicar, puede que sea una mala idea."
+#reemplazar = frase.replace("difícil","fácil").replace("mala","buena")
+#print(reemplazar)
 
 
 
