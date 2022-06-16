@@ -17,6 +17,8 @@ letras.append(input("Escribe la primera letra: ").lower())
 letras.append(input("Escribe la segunda letra: ").lower())
 letras.append(input("Escribe la tercera letra: ").lower())
 
+#basicamente almacenamos las palabras en un index, en su orden 0,1,2 para asi luego poder imprimir con facilidad
+#guardandolas en variables
 print("\n")
 print("CANTIDAD DE LETRAS")
 cantidad_letras1 = texto.count(letras[0])
@@ -44,6 +46,9 @@ palabras.reverse()
 texto_invertido = " ".join(palabras)
 print(f"si ordenamos tu texto al revés va a decir: {texto_invertido}")
 
+
+#guardamos en buscar_python el resultado del booleano, luego definimos en un diccionario, al usar la funcion que hay en el print
+#le decimos que me imprima en el diccionario dic lo que hay de valor en la clave sacada de la variable busscar_python
 print("\n")
 print("BUSCANDO LA PALABRA PYTHON")
 buscar_python = "python" in texto
