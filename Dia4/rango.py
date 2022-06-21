@@ -16,3 +16,10 @@
 
 #mi_lista = list(range(3,301,3))
 #print(mi_lista)#
+
+
+#suma_cuadrados = 0
+#for valores in list(range(1,16)):
+#    potencia = valores ** 2
+#    suma_cuadrados += potencia
+#print(suma_cuadrados)
