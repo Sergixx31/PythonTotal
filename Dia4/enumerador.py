@@ -30,6 +30,11 @@
 
 lista_nombres = ["Marcos", "Laura", "Mónica", "Javier", "Celina", "Marta", "Darío", "Emiliano", "Melisa"]
 
+for indice,item in enumerate(lista_nombres):
+    letra = lista_nombres[0][0]
+    print(indice,item)
+    print(letra)
+
 
 
 
