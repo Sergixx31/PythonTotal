@@ -4,9 +4,8 @@ intentos = 0
 estimado = 0
 numero_secreto = randint(1,100)
 nombre = input("Dimne tu nombre: ")
-print(numero_secreto)
 print(f"Bueno {nombre}, he pensado un numero entre 1 y 100\nTienes 8 intentos para adivinar")
-
+#print(numero_secreto)
 while intentos < 8:
     estimado = int(input("Cual es el numero?: "))
     intentos += 1
