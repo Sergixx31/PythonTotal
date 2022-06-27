@@ -10,12 +10,12 @@ def evaluar_jugada(numero1, numero2):
     suma_dados = numero1 + numero2
     if suma_dados <= 6:
         print(f"La suma de tus dados es {suma_dados}. Lamentable")
-    elif suma_dados > 6 and suma_dados < 10:
+    elif 6 < suma_dados < 10:
         print(f"La suma de tus dados es {suma_dados}. Tienes buenas chances")
     elif suma_dados >= 10:
         print(f"La suma de tus dados es {suma_dados}. Parece una jugada ganadora")
     else:
-        "pta"
+        "ª"
 
 
 dado1, dado2 = lanzar_dados()
