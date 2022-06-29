@@ -17,3 +17,39 @@
 #    print(f"{nombre}, la suma de tus números es {suma}")
 
 #numeros_persona(nombre, numeros)
+
+
+#def suma_cuadrados(*args):
+#    suma = 0
+#    for arg in args:
+#        suma += arg ** 2
+
+#    return suma
+
+
+#def suma_absolutos(*args):
+#    suma = 0
+#    for arg in args:
+#        suma += abs(arg)
+
+#    return suma
+
+
+
+#def numeros_persona(nombre, *args):
+#    suma_numeros = sum(args)
+#    return f'{nombre}, la suma de tus números es {suma_numeros}'
+
+
+
+
+
+
+
+
+
+
+
+
+
+

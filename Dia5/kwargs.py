@@ -29,7 +29,24 @@
 
 
 
+#def cantidad_atributos(**kwargs):
+#    cantidad = 0
+#    for clave in kwargs.items():
+#        cantidad += 1
+#    return cantidad
 
+
+#def lista_atributos(**kwargs):
+#    lista = []
+#    for valor in kwargs.values():
+#        lista.append(valor)
+#    return lista
+
+
+#def describir_persona(nombre, **kwargs):
+#    print(f"Características de {nombre}:")
+#    for clave, valor in kwargs.items():
+#        print(f'{clave}: {valor}')
 
 
 
