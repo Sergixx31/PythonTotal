@@ -24,16 +24,21 @@
 #print(mi_archivo.read())
 #mi_archivo.close()
 
+#mi_archivo = open('mi_archivo.txt',"a", encoding='cp1252', errors='surrogateescape')
+#mi_archivo.write("Nuevo inicio de sesión")
+#mi_archivo = open('mi_archivo.txt',"r", encoding='cp1252', errors='surrogateescape')
+#print(mi_archivo.read())
+#mi_archivo.close()
 
 
 
-
-
-
-
-
-
-
+#registro_ultima_sesion = ["Federico", "20/12/2021", "08:17:32 hs", "Sin errores de carga"]
+#mi_archivo = open('registro.txt',"a", encoding='cp1252', errors='surrogateescape')
+#for p in registro_ultima_sesion:
+#    mi_archivo.writelines(p + "\t")
+#mi_archivo = open('registro.txt',"r", encoding='cp1252', errors='surrogateescape')
+#print(mi_archivo.read())
+#mi_archivo.close()
 
 
 
