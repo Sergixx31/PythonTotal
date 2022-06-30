@@ -1,4 +1,4 @@
-mi_archivo = open('Prueba.txt', encoding='cp1252', errors='surrogateescape')
+#mi_archivo = open('Prueba.txt', encoding='cp1252', errors='surrogateescape')
 
 ##print(mi_archivo.read())
 #una_linea = mi_archivo.readline()
@@ -29,11 +29,14 @@ mi_archivo = open('Prueba.txt', encoding='cp1252', errors='surrogateescape')
 
 
 
+#mi_archivo = open('texto.txt', encoding='cp1252', errors='surrogateescape')
+#print(mi_archivo.read())
 
-
-
-
-
+#mi_archivo = open('texto.txt', encoding='cp1252', errors='surrogateescape')
+#una_linea = mi_archivo.readline()
+#print(una_linea.rstrip())
+#mi_archivo.close()
+#
 
 
 
