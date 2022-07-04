@@ -15,3 +15,28 @@ class Pajaro:
 
 piolin = Pajaro("amarillo", "Canario")
 piolin.piar()
+
+
+
+##########################################
+class Perro:
+
+    def ladrar(self):
+        print("Guau!")
+
+pluto = Perro()
+pluto.ladrar()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
