@@ -3,7 +3,7 @@ from pathlib import Path
 from os import system
 
 
-mi_ruta = Path("/home/sergi/PycharmProjects/PythonTotal/Dia6/proyecto", "recetas")
+mi_ruta = Path("/home/smartinez/PycharmProjects/PythonTotal/Dia6/proyecto", "recetas")
 
 def contar_recetas(ruta):
     contador = 0
@@ -33,7 +33,7 @@ def inicio():
         [5] - Eliminar categoria
         [6] - Salir del programa""")
         eleccion_menu = input()
-    return (eleccion_menu)
+    return int((eleccion_menu))
 
 def mostrar_categorias(ruta):
     print("Categorias:")
@@ -127,63 +127,50 @@ def eliminar_categoria(categoria):
     print(f"La categotia {categoria.name} ha sido eliminada")
 
 def volver_al_inicio():
+    eleccion_regresar = "x"
+
+    while eleccion_regresar.lower() != "v":
+        eleccion_regresar = input("\nPresione V para volver al menu: ")
 
 
+finalizar = False
 
+while not finalizar:
 
+    menu = inicio()
 
+    if menu == 1:
+        mis_categorias = mostrar_categorias(mi_ruta)
+        mi_categoria = elegir_categoria(mis_categorias)
+        mis_recetas = mostrar_recetas(mi_ruta)
+        mi_receta = elegir_recetas(mis_recetas)
+        leer_receta(mi_receta)
+        volver_al_inicio()
 
+    elif menu == 2:
+        mis_categorias = mostrar_categorias(mi_ruta)
+        mi_categoria = elegir_categoria(mis_categorias)
+        crear_receta(mi_categoria)
+        volver_al_inicio()
 
+    elif menu == 3:
+        crear_categoria(mi_ruta)
+        volver_al_inicio()
 
+    elif menu == 4:
+        mis_categorias = mostrar_categorias(mi_ruta)
+        mi_categoria = elegir_categoria(mis_categorias)
+        mis_recetas = mostrar_recetas(mi_ruta)
+        mi_receta = elegir_recetas(mis_recetas)
+        eliminar_receta(mi_receta)
+        volver_al_inicio()
 
+    elif menu == 5:
+        mis_categorias = mostrar_categorias(mi_ruta)
+        mi_categoria = elegir_categoria(mis_categorias)
+        eliminar_categoria(mi_categoria)
+        volver_al_inicio()
 
+    elif menu == 6:
+        finalizar = True
 
-
-
-
-
-
-
-
-
-
-menu = 0
-
-if menu == 1:
-    mis_categorias = mostrar_categorias(mi_ruta)
-    mi_categoria = elegir_categoria(mis_categorias)
-    mis_recetas = mostrar_recetas(mi_ruta)
-    mi_receta = elegir_recetas(mis_recetas)
-    leer_receta(mi_receta)
-    #volver al inicio
-    pass
-elif menu == 2:
-    mis_categorias = mostrar_categorias(mi_ruta)
-    mi_categoria = elegir_categoria(mis_categorias)
-    crear_receta(mi_categoria)
-    # volver inicio
-    pass
-elif menu == 3:
-    crear_categoria(mi_ruta)
-    #volver al inicio
-    pass
-elif menu == 4:
-    mis_categorias = mostrar_categorias(mi_ruta)
-    mi_categoria = elegir_categoria(mis_categorias)
-    mis_recetas = mostrar_recetas(mi_ruta)
-    mi_receta = elegir_recetas(mis_recetas)
-    eliminar_receta(mi_receta)
-    # volver al inicio
-    pass
-elif menu == 5:
-    mis_categorias = mostrar_categorias(mi_ruta)
-    mi_categoria = elegir_categoria(mis_categorias)
-    eliminar_categoria(mi_categoria)
-    #volver al inicio
-    pass
-elif menu == 6:
-    #finalizar programa
-    pass
-
-
-inicio()
