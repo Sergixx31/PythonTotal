@@ -27,12 +27,12 @@ class Perro:
 pluto = Perro()
 pluto.ladrar()
 
+class Alarma:
+    def postergar(self, cantidad_minutos):
+        print(f"La alarma ha sido pospuesta {cantidad_minutos} minutos")
 
-
-
-
-
-
+telefono = Alarma()
+telefono.postergar(50)
 
 
 
